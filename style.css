@@ -1,0 +1,202 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline:none;
+    box-shadow:0 0 5px 5px #f9c508;
+}
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-weight:400;
+    line-height:1.7;
+    padding:1rem 0;
+    background:linear-gradient(to bottom right ,#fa0a72,#960644 );
+}
+
+.header__container-grid{
+    display:grid;
+    grid-template-columns:  1fr 1fr;
+    column-gap:1.2rem;
+}
+
+.header__form-grid {
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+.header__form label {
+    display:block;
+    font-size:4.8rem;
+    font-weight: 700;
+    margin-top:-2rem;
+    text-align: center;
+    text-transform:uppercase;
+    color: #f9c508;
+}
+
+.header__form-input input {
+    width: 100%;
+    height:3rem;
+    border-radius:.8rem;
+    border:none;
+    margin:0 0 1.6rem 0;
+}
+
+.header__form-input input::placeholder {
+    font-size: 1.2rem;
+    color:#777;
+    text-transform:uppercase
+}
+
+.btn {
+    width:100%;
+    height:3rem;
+    border-radius:.8rem;
+    border:none;
+    text-transform: uppercase;
+    letter-spacing:.08rem;
+    background-color: #f9c508;
+    color:#c8085b;
+}
+
+.example__text-heading {
+    text-align: center;
+    margin-top:1.6rem;
+    font-size:1.8rem;
+    border-bottom:2px solid #c8085b;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.example-text {
+    text-align: center;
+    margin-top:1.6rem;
+    font-size:1.5rem;
+    line-height:2;
+}
+
+.form__submissions-emojis{
+    background-color:#fff;
+    height:71%;
+    width:45%;
+    position:absolute;
+    right:2.5rem;
+    bottom:2.1rem;
+    /* border:2px solid #c8085b; */
+    overflow-y: scroll;
+}
+
+.header{
+    height:95vh;
+    background-image:linear-gradient(to right bottom,rgb(250, 209, 57, 0.6),rgb(174, 138, 6, 0.6)), url(./samuel-regan-asante-wMkaMXTJjlQ-unsplash.jpg);
+    background-size:cover;
+    background-position: center;
+    clip-path:polygon(0 10%, 100% 0, 100% 85vh, 0 100%);
+    position:relative;
+    margin-top: 1.6rem;
+    padding-top:8.2rem;
+    
+}
+
+.heading-primary{
+    text-align: center;
+    font-size:6.4rem;
+    letter-spacing:1.7rem;
+    font-weight:700;
+    padding:0 1rem 0 1rem;
+    text-transform: uppercase;
+    color:#f9c508;
+}
+
+.header__background-effect {
+    position:relative;
+}
+
+.header__background-effect::after {
+    background:linear-gradient(to top right ,#fa0a72,#960644 );
+    display:block;
+    content: '';
+    position:absolute;
+    bottom:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.7;
+    transform:scale(1.07, 1.05) skewX(-15deg);
+}
+.heading-secondary {
+    text-align:center;
+    font-size:2.4rem;
+    font-weight:500;
+    letter-spacing:.3rem;
+    text-transform:uppercase;
+    margin-top:-1.8rem;
+    margin-bottom:6.4rem;
+    color:#f9c508;
+}
+
+.heading__tertiary {
+    display:block;
+    font-size:4.8rem;
+    font-weight:700;
+    text-align: center;
+    text-transform:uppercase;
+    color: #f9c508;
+    position:absolute;
+    top:.30rem;
+    right:7.3rem;
+}
+.header__container {
+    max-width:70rem;
+    height:35rem;
+    margin:0 auto;
+    padding:2.4rem;
+    padding-bottom:34.5rem;
+    border-radius:.9rem;
+    background:linear-gradient(to top right ,rgb(250, 10, 114,.6),rgb(150, 6, 68,.6) );
+    position:relative;
+    /* opacity:0.7; */
+    /* border: 4px solid #c8085b; */
+}
+
+.example-container {
+    background-color:#eee;
+    padding:0 1.2rem;
+}
+.emojis {
+    text-align: center;
+    font-size:2rem;
+    /* box-shadow:inset 0 0 0 1px #c8085b */
+}
+
+.spinner {
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.spinner svg {
+    height: 9rem;
+    width: 9rem;
+    fill: #c8085b;
+    animation: rotate 2s infinite linear;
+    animation-timing-function: 3s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

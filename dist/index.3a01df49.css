@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:focus {
+  outline: none;
+  box-shadow: 0 0 5px 5px #f9c508;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(to bottom right, #fa0a72, #960644);
+  padding: 1rem 0;
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.header__container-grid {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.2rem;
+  display: grid;
+}
+
+.header__form-grid {
+  grid-template-columns: 1fr;
+  display: grid;
+}
+
+.header__form label {
+  text-align: center;
+  text-transform: uppercase;
+  color: #f9c508;
+  margin-top: -2rem;
+  font-size: 4.8rem;
+  font-weight: 700;
+  display: block;
+}
+
+.header__form-input input {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  border-radius: .8rem;
+  margin: 0 0 1.6rem;
+}
+
+.header__form-input input::placeholder {
+  color: #777;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.btn {
+  width: 100%;
+  height: 3rem;
+  text-transform: uppercase;
+  letter-spacing: .08rem;
+  color: #c8085b;
+  background-color: #f9c508;
+  border: none;
+  border-radius: .8rem;
+}
+
+.example__text-heading {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #c8085b;
+  margin-top: 1.6rem;
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+
+.example-text {
+  text-align: center;
+  margin-top: 1.6rem;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.form__submissions-emojis {
+  height: 71%;
+  width: 45%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 2.1rem;
+  right: 2.5rem;
+  overflow-y: scroll;
+}
+
+.header {
+  height: 95vh;
+  clip-path: polygon(0 10%, 100% 0, 100% 85vh, 0 100%);
+  background-image: linear-gradient(to bottom right, #fad13999, #ae8a0699), url("samuel-regan-asante-wMkaMXTJjlQ-unsplash.cbd3e5b6.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-top: 1.6rem;
+  padding-top: 8.2rem;
+  position: relative;
+}
+
+.heading-primary {
+  text-align: center;
+  letter-spacing: 1.7rem;
+  text-transform: uppercase;
+  color: #f9c508;
+  padding: 0 1rem;
+  font-size: 6.4rem;
+  font-weight: 700;
+}
+
+.header__background-effect {
+  position: relative;
+}
+
+.header__background-effect:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .7;
+  background: linear-gradient(to top right, #fa0a72, #960644);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scale(1.07, 1.05)skewX(-15deg);
+}
+
+.heading-secondary {
+  text-align: center;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  color: #f9c508;
+  margin-top: -1.8rem;
+  margin-bottom: 6.4rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.heading__tertiary {
+  text-align: center;
+  text-transform: uppercase;
+  color: #f9c508;
+  font-size: 4.8rem;
+  font-weight: 700;
+  display: block;
+  position: absolute;
+  top: .3rem;
+  right: 7.3rem;
+}
+
+.header__container {
+  max-width: 70rem;
+  height: 35rem;
+  background: linear-gradient(to top right, #fa0a7299, #96064499);
+  border-radius: .9rem;
+  margin: 0 auto;
+  padding: 2.4rem 2.4rem 34.5rem;
+  position: relative;
+}
+
+.example-container {
+  background-color: #eee;
+  padding: 0 1.2rem;
+}
+
+.emojis {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.spinner {
+  text-align: center;
+  margin: 5rem auto;
+}
+
+.spinner svg {
+  height: 9rem;
+  width: 9rem;
+  fill: #c8085b;
+  animation: rotate 2s linear infinite;
+  animation-timing-function: 3s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */

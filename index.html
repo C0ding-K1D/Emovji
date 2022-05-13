@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script defer type="module" src="js/controller.js"></script>
+    <title>Emovji</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="heading-primary">
+            <span class="header__background-effect">emovji</span>
+        </h1>
+        <h2 class="heading-secondary"><span class="header__background-effect">Convert movie titles into emoji's</span></h2>
+        <div class="header__container header__container-grid">
+            <label class="heading__tertiary">results</label>
+                <form action="#" class="header__form">
+                    <div class="header__form-input">
+                        <label for="movie-title">converter</label>
+                        <input class="movie-title" type="text" placeholder=" name your Movie" required>
+                    </div>
+                    <button class="btn btn__form">begin conversion</button>
+                    <div class="example-container">
+                        <h3 class="example__text-heading">example results</h3>
+                        <p class="example-text">Back to the Future: 👨👴🚗🕒</p>
+                        <p class="example-text">Batman: 🤵🦇</p>
+                        <p class="example-text">Transformers: 🚗🤖</p>
+                    </div>
+                </form>
+                <div class="form__submissions-emojis">
+                    <div class="spinner-box">
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
